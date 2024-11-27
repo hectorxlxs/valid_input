@@ -31,19 +31,19 @@ You can pass to all the examples below an additional parameter error_msg to
 override the default error message of the input function
 
 ### input_int
-```
+```python
 from valid_input.tools import input_int
 age = input_int("Introduce your age: ")  # Returns an integer
 ```
 
 ### input_float
-```
+```python
 from valid_input.tools import input_float
 height = input_float("What's your height? (in meters): ")  # Returns a float
 ```
 
 ### input_option
-```
+```python
 from valid_input.tools import input_option
 
 # Returns the element chosen from the list
@@ -60,7 +60,7 @@ option = input_option("Choose a number between 1 and 4: ", options)
 ```
 
 ### input_yes_no
-```
+```python
 from valid_input.tools import input_yes_no
 
 # Returns True if the user inputs 'yes' or 'y', and False if the user inputs 'no' or 'n' (case insensitive)
@@ -68,10 +68,10 @@ is_student = input_yes_no("Are you a student? (yes/no): ")
 ```
 
 ### input_date
-```
+```python
 from valid_input.tools import input_date
 
-# Returns a datetime object (by default expects the date in the format YYYY-MM-DD")
+# Returns a datetime object (by default expects the date in the format "YYYY-MM-DD")
 birthday = input_date("Introduce your birthday (YYYY-MM-DD): ")
 
 # You can specify the date format
@@ -79,7 +79,7 @@ birthday = input_date("Introduce your birthday (DD/MM/YYYY): ", date_format="%d/
 ```
 
 ### input_with_length
-```
+```python
 from valid_input.tools import input_with_length
 
 # Returns a string with defined minimum and maximum length
@@ -91,7 +91,7 @@ name = input_with_length("Introduce your name: ", max_length=50)  # Returns a st
 ```
 
 ### input_list
-```
+```python
 from valid_input.tools import input_list
 
 # Returns a list of elements that match the validation function
@@ -105,7 +105,7 @@ numbers = input_list("Introduce a list of numbers separated by commas: ", item_v
 ```
 
 ### input_num_in_range
-```
+```python
 from valid_input.tools import input_num_in_range
 
 # Returns a number in the specified range
@@ -121,7 +121,7 @@ age = input_num_in_range("Introduce your age: ", 0, 120, allow_float=False)  # R
 ```
 
 ### input_with_regex
-```
+```python
 from valid_input.tools import input_with_regex
 
 # Returns a string that matches the regex
@@ -129,7 +129,7 @@ isbn = input_with_regex("Introduce the ISBN of the book: ", r"\d{9}[\d|X]")
 ```
 
 ### validated_input
-```
+```python
 from valid_input.tools import validated_input
 
 # Returns a string that passes the validation function
