@@ -1,6 +1,6 @@
 # valid_input
 
-valid_input is a lightweight Python library for performing commonly used input checks like make the user inputs a valid int or float or an especific option
+valid_input is a lightweight Python library for performing commonly used input checks like making the user input a valid int or float or a specific option
 
 ## Index
 - [Installation](#installation)
@@ -19,7 +19,7 @@ valid_input is a lightweight Python library for performing commonly used input c
 
 ## Installation
 
-You can install input_tools using pip:
+You can install valid_input using pip:
 
 ```bash
 pip install valid_input
@@ -56,14 +56,14 @@ options = [1, 2, "3", 4]
 # The user can choose between 1, 2, 3 or 4
 option = input_option("Choose a number between 1 and 4: ", options)
 
-# If the user chooses 3, the returned value will be "3" as string, else it will be the chosen number as integer
+# If the user chooses 3, the returned value will be '3' as a string; otherwise, it will be the chosen number as an integer
 ```
 
 ### input_yes_no
 ```
 from valid_input.tools import input_yes_no
 
-# Returns True if the user inputs "yes" or "y" or False if the user inputs "no" or "n" (case insensitive)
+# Returns True if the user inputs 'yes' or 'y', and False if the user inputs 'no' or 'n' (case insensitive)
 is_student = input_yes_no("Are you a student? (yes/no): ")
 ```
 
@@ -100,7 +100,7 @@ numbers = input_list("Introduce a list of numbers separated by commas: ", item_v
 # You can define a custom separator
 numbers = input_list("Introduce a list of numbers separated by semicolons: ", item_validation_func=int, separator=";")
 
-# Also you can allow an empty list (by default is not allowed)
+# You can also allow an empty list (by default, it is not allowed)
 numbers = input_list("Introduce a list of numbers separated by commas: ", item_validation_func=int, allow_empty=True)
 ```
 
